@@ -3,4 +3,4 @@ Code for "DualPoseNet: Category-level 6D Object Pose and Size Estimation Using D
 
 Created by Jiehong Lin, Zewei Wei, Zhihao Li, Songcen Xu, [Kui Jia](http://kuijia.site/), and Yuanqing Li.
 
-![image](https://github.com/Gorilla-Lab-SCUT/DualPoseNet/blob/main/doc/FigNetwork.pdf)
+![image](https://github.com/Gorilla-Lab-SCUT/DualPoseNet/blob/main/doc/FigNetwork.png)
