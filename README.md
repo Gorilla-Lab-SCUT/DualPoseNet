@@ -22,7 +22,7 @@ This code has been tested with
 - tensorflow-gpu 1.11.0
 - CUDA 11.2
 
-## Data
+## Downloads
 - Pre-processed training data
 - Pre-trained model
 - Predicitons on CAMERA25 and REAL275
