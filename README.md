@@ -23,8 +23,9 @@ This code has been tested with
 - CUDA 11.2
 
 ## Downloads
-- Pre-trained model [link]
-- Predicitons on CAMERA25 and REAL275 [link]
+- Pre-trained models [link]
+- Segmantation predictions on CAMERA25 and REAL275 [link]
+- Pose Predicitons on CAMERA25 and REAL275 [link]
 
 ## Evaluation
 Evaluate the results of DualPoseNet reported in the paper:
