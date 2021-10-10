@@ -25,7 +25,7 @@ This code has been tested with
 ## Downloads
 - Pre-trained models [link]
 - Segmantation predictions on CAMERA25 and REAL275 [link]
-- Pose Predicitons on CAMERA25 and REAL275 [link]
+- Pose Predicitons on CAMERA25 and REAL275 [[link](https://drive.google.com/file/d/10TBFY73BMmTxfErlbMqZKfClZgxMzMd9/view?usp=sharing)]
 
 ## Evaluation
 Evaluate the results of DualPoseNet reported in the paper:
