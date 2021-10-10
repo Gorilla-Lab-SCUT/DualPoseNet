@@ -26,11 +26,21 @@ This code has been tested with
 - Pre-trained model [link]
 - Predicitons on CAMERA25 and REAL275 [link]
 
-## Demo
+## Evaluation
 Evaluate the results of DualPoseNet reported in the paper:
 
 ```
-python demo.py
+python eval.py
+```
+
+## Training
+```
+python main.py --phase train
+```
+
+## Test
+```
+python main.py --phase test
 ```
 
 ## Acknowledgements
