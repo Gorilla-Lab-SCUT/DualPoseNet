@@ -23,20 +23,19 @@ This code has been tested with
 - CUDA 11.2
 
 ## Downloads
-- Pre-processed training data
-- Pre-trained model
-- Predicitons on CAMERA25 and REAL275
+- Pre-trained model [link]
+- Predicitons on CAMERA25 and REAL275 [link]
 
-## Training
+## Demo
+Evaluate the results of DualPoseNet reported in the paper:
 
-## Evaluation
-
-
-
+```
+python demo.py
+```
 
 ## Acknowledgements
 
-The code is modified from [SCNN](https://github.com/daniilidis-group/spherical-cnn) and [NOCS](https://github.com/hughw19/NOCS_CVPR2019).
+Our implementation leverages the code from [SCNN](https://github.com/daniilidis-group/spherical-cnn) and [NOCS](https://github.com/hughw19/NOCS_CVPR2019).
 
 ## License
 Our code is released under MIT License (see LICENSE file for details).
