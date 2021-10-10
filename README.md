@@ -9,12 +9,14 @@ Created by Jiehong Lin, Zewei Wei, Zhihao Li, Songcen Xu, [Kui Jia](http://kuiji
 ## Citation
 If you find our work useful in your research, please consider citing:
 
-     @article{lin2021dualposenet,
-        title={DualPoseNet: Category-level 6D Object Pose and Size Estimation Using Dual Pose Network with Refined Learning of Pose Consistency},
-        author={Lin, Jiehong and Wei, Zewei and Li, Zhihao and Xu, Songcen and Jia, Kui and Li, Yuanqing},
-        journal={arXiv preprint arXiv:2103.06526},
-        year={2021}
-      }
+     @InProceedings{Lin_2021_ICCV,
+         author    = {Lin, Jiehong and Wei, Zewei and Li, Zhihao and Xu, Songcen and Jia, Kui and Li, Yuanqing},
+         title     = {DualPoseNet: Category-Level 6D Object Pose and Size Estimation Using Dual Pose Network With Refined Learning of Pose Consistency},
+         booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+         month     = {October},
+         year      = {2021},
+         pages     = {3560-3569}
+     }
 
 ## Requirements
 This code has been tested with
