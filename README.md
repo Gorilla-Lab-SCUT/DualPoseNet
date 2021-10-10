@@ -1,5 +1,5 @@
 # DualPoseNet
-Code for "DualPoseNet: Category-level 6D Object Pose and Size Estimation Using Dual Pose Network with Refined Learning of Pose Consistency", ICCV2021. [Paper][[Arxiv](https://arxiv.org/abs/2103.06526)]
+Code for "DualPoseNet: Category-level 6D Object Pose and Size Estimation Using Dual Pose Network with Refined Learning of Pose Consistency", ICCV2021. [[Paper](https://openaccess.thecvf.com/content/ICCV2021/papers/Lin_DualPoseNet_Category-Level_6D_Object_Pose_and_Size_Estimation_Using_Dual_ICCV_2021_paper.pdf)][[Supp](https://openaccess.thecvf.com/content/ICCV2021/supplemental/Lin_DualPoseNet_Category-Level_6D_ICCV_2021_supplemental.pdf)][[Arxiv](https://arxiv.org/abs/2103.06526)]
 
 Created by Jiehong Lin, Zewei Wei, Zhihao Li, Songcen Xu, [Kui Jia](http://kuijia.site/), and Yuanqing Li.
 
