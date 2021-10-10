@@ -35,14 +35,25 @@ python eval.py
 ```
 
 ## Training
+
+Command for training DualPoseNet:
 ```
-python main.py --phase train
+python main.py --phase train --dataset REAL275
+```
+The configurations can be modified in ```utils/config.py```.
+
+## Testing
+Command for testing DualPoseNet without refined learning:
+```
+python main.py --phase test --dataset REAL275
 ```
 
-## Test
+Command for testing DualPoseNet with refined learning:
 ```
-python main.py --phase test
+python main.py --phase test_refine_encoder --dataset REAL275
 ```
+
+The configurations can also be modified in ```utils/config.py```.
 
 ## Acknowledgements
 
