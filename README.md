@@ -26,7 +26,7 @@ This code has been tested with
 
 ## Downloads
 - Pre-trained models [[link](https://drive.google.com/file/d/16DVaudTE_K_dqXbKoW7SASgxRQnfHApI/view?usp=sharing)]
-- Segmentation predictions on CAMERA25 and REAL275 [link]
+- Segmentation predictions on CAMERA25 and REAL275 [[link](https://drive.google.com/file/d/1RwAbFWw2ITX9mXzLUEBjPy_g-MNdyHET/view?usp=sharing)]
 - Pose Predicitons on CAMERA25 and REAL275 [[link](https://drive.google.com/file/d/10TBFY73BMmTxfErlbMqZKfClZgxMzMd9/view?usp=sharing)]
 
 ## Evaluation
