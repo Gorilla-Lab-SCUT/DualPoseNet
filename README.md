@@ -25,7 +25,7 @@ This code has been tested with
 - CUDA 11.2
 
 ## Downloads
-- Pre-trained models [link]
+- Pre-trained models [[link](https://drive.google.com/file/d/16DVaudTE_K_dqXbKoW7SASgxRQnfHApI/view?usp=sharing)]
 - Segmantation predictions on CAMERA25 and REAL275 [link]
 - Pose Predicitons on CAMERA25 and REAL275 [[link](https://drive.google.com/file/d/10TBFY73BMmTxfErlbMqZKfClZgxMzMd9/view?usp=sharing)]
 
