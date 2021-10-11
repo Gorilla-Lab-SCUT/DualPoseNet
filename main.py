@@ -20,7 +20,9 @@ pp = pprint.PrettyPrinter()
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR = BASE_DIR
 sys.path.append(os.path.join(ROOT_DIR, 'model'))
+sys.path.append(os.path.join(ROOT_DIR, 'provider'))
 sys.path.append(os.path.join(ROOT_DIR, 'utils'))
+
 
 import tensorflow as tf
 import configs
