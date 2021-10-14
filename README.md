@@ -55,6 +55,11 @@ Command for testing DualPoseNet with refined learning:
 python main.py --phase test_refine_encoder --dataset REAL275
 ```
 
+We also provider another faster way of refinement by directly finetuning the pose-sensitive features:
+```
+python main.py --phase test_refine_feature --dataset REAL275
+```
+
 The configurations can also be modified in ```utils/config.py```.
 
 ## Acknowledgements
