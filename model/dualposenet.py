@@ -211,9 +211,6 @@ class DualPoseNet(object):
             image_path = data['image_path']
             num_instance = len(data['pred_class_ids'])
 
-            image_path = os.path.join(
-                '/data/linjiehong/posed3Ddet/NOCS_CVPR2019-master/', image_path)
-
             image = cv2.imread(image_path + '_color.png')[:, :, :3]
             image = image[:, :, ::-1]
             depth = load_depth(image_path)
@@ -360,9 +357,6 @@ class DualPoseNet(object):
                 data = cPickle.load(f)
             image_path = data['image_path']
             num_instance = len(data['pred_class_ids'])
-
-            image_path = os.path.join(
-                '/data/linjiehong/posed3Ddet/NOCS_CVPR2019-master/', image_path)
 
             image = cv2.imread(image_path + '_color.png')[:, :, :3]
             image = image[:, :, ::-1]
@@ -528,9 +522,6 @@ class DualPoseNet(object):
                 data = cPickle.load(f)
             image_path = data['image_path']
             num_instance = len(data['pred_class_ids'])
-
-            image_path = os.path.join(
-                '/data/linjiehong/posed3Ddet/NOCS_CVPR2019-master/', image_path)
 
             image = cv2.imread(image_path + '_color.png')[:, :, :3]
             image = image[:, :, ::-1]
