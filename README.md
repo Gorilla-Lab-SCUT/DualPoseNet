@@ -35,6 +35,36 @@ Evaluate the results of DualPoseNet reported in the paper:
 ```
 python eval.py
 ```
+## Data Preparation
+
+Download the data provided by [NOCS](https://github.com/hughw19/NOCS_CVPR2019) ([real_train](http://download.cs.stanford.edu/orion/nocs/real_train.zip), [real_test](http://download.cs.stanford.edu/orion/nocs/real_test.zip),
+[ground truths](http://download.cs.stanford.edu/orion/nocs/gts.zip),
+and [mesh models](http://download.cs.stanford.edu/orion/nocs/obj_models.zip)), and unzip them in the file ```data/``` as follows:
+
+```
+data
+├── CAMERA
+│   ├── train
+│   └── val
+├── Real
+│   ├── train
+│   └── test
+├── gts
+│   ├── val
+│   └── real_test
+└── obj_models
+    ├── train
+    ├── val
+    ├── real_train
+    └── real_test
+```
+
+Run the following scripts to prepare training instances:
+
+```
+cd provider
+python training_data_prepare.py
+```
 
 ## Training
 
@@ -64,7 +94,7 @@ The configurations can also be modified in ```utils/config.py```.
 
 ## Acknowledgements
 
-Our implementation leverages the code from [SCNN](https://github.com/daniilidis-group/spherical-cnn) and [NOCS](https://github.com/hughw19/NOCS_CVPR2019).
+Our implementation leverages the code from [SCNN](https://github.com/daniilidis-group/spherical-cnn), [NOCS](https://github.com/hughw19/NOCS_CVPR2019) and [SPD](https://github.com/mentian/object-deformnet).
 
 ## License
 Our code is released under MIT License (see LICENSE file for details).
