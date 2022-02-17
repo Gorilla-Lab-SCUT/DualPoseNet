@@ -39,7 +39,7 @@ python eval.py
 
 Download the data provided by [NOCS](https://github.com/hughw19/NOCS_CVPR2019) ([real_train](http://download.cs.stanford.edu/orion/nocs/real_train.zip), [real_test](http://download.cs.stanford.edu/orion/nocs/real_test.zip),
 [ground truths](http://download.cs.stanford.edu/orion/nocs/gts.zip),
-and [mesh models](http://download.cs.stanford.edu/orion/nocs/obj_models.zip)), and unzip them in the file ```data/``` as follows:
+and [mesh models](http://download.cs.stanford.edu/orion/nocs/obj_models.zip)), and unzip them in the folder ```data/``` as follows:
 
 ```
 data
