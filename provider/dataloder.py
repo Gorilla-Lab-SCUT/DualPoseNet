@@ -9,11 +9,12 @@ Dataloders of REAL275 and CAMERA25.
 Author: Jiehong Lin
 """
 
+import os
 import numpy as np
 import queue
 import threading
 import glob
-
+import _pickle as cPickle
 
 class Fetcher(threading.Thread):
     def __init__(self, opts):
@@ -22,20 +23,37 @@ class Fetcher(threading.Thread):
         self.stopped = False
         self.opts = opts
 
-        data_path = glob.glob('data/training_instances/CAMERA25_*.npz')
+
+        data_paths = glob.glob('data/training_instance/CAMERA25_*.pkl')
         if self.opts.dataset == 'REAL275':
-            data_path += 'data/training_instances/REAL275.npz'
-        data = [np.load(p) for p in range(data_path)]
-        K = len(data)
+            data_paths.append('data/training_instance/REAL275.pkl')
+        print(data_paths)
 
-        self.observed_pc = np.concatenate([data[k]['pts'] for k in range(K)], aixs=0)
-        self.input_dis = np.concatenate([data[k]['smap'][:, :, :, 0][:, :, :, np.newaxis] for k in range(K)], aixs=0)
-        self.input_rgb = np.concatenate([data[k]['smap'][:, :, :, 1:] for k in range(K)], aixs=0)
-        self.rotation = np.concatenate([data[k]['rotation'] for k in range(K)], aixs=0)
-        self.translation = np.concatenate([data[k]['translation'] for k in range(K)], aixs=0)
-        self.scale = np.concatenate([data[k]['size'] for k in range(K)], aixs=0)
+        self.observed_pc = []
+        self.input_dis = []
+        self.input_rgb = []
+        self.rotation = []
+        self.translation = []
+        self.scale = []
 
-        # print(input_data)
+        for data_path in data_paths:
+            print(data_path)
+            with open(data_path, 'rb') as f:
+                data = cPickle.load(f)
+            self.observed_pc.append(data['observed_pc'])
+            self.input_dis.append(data['input_dis'])
+            self.input_rgb.append(data['input_rgb'])
+            self.rotation.append(data['rotation'])
+            self.translation.append(data['translation'])
+            self.scale.append(data['scale'])
+
+        self.observed_pc = np.concatenate(self.observed_pc, axis=0)
+        self.input_dis = np.concatenate(self.input_dis, axis=0)
+        self.input_rgb = np.concatenate(self.input_rgb, axis=0)
+        self.rotation = np.concatenate(self.rotation, axis=0)
+        self.translation = np.concatenate(self.translation, axis=0)
+        self.scale = np.concatenate(self.scale, axis=0)
+
         self.batch_size = self.opts.batch_size
         self.sample_cnt = self.input_dis.shape[0]
         self.num_batches = self.sample_cnt//self.batch_size
